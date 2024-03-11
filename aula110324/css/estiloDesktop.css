@@ -1,0 +1,15 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    color:#00008b;
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: italic;
+}
+h2{
+    color: #f00; 
+    font-size: 300%;
+    font-weight: bolder;
+}
+
