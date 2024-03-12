@@ -1,0 +1,52 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li{
+    list-style: none;
+}
+#tituloSite h1{
+    font-size: 2.5em;
+    color: #AA1111;
+    font-weight: bolder;
+    font-style: italic;
+}
+nav a:link{
+    color: #0d6947;
+}
+nav a:visited{
+    color: #0d6947;
+}
+nav a:hover{
+    color: #F00;
+}
+.ditadosximira p{
+    font-style: italic;
+}
+.ditadosximira p::before{
+    content: open-quote;
+}
+.ditadosximira p::after{
+    content: close-quote;
+}
+.historia header h2{
+    font-size: 1.5em;
+    color: #db3434;
+}
+.historia p{
+    font-size: 0.8em;
+    text-align: justify;
+}
+.lema{
+    font-style: italic;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.lema::before{
+    content: open-quote;
+}
+.lema::after{
+    content: close-quote;
+}
+#logo img{
+    width: 120px;
+}
