@@ -1,0 +1,49 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header h2{
+    font-size: 2em;
+    font-weight: bolder;
+    color: #ffaa00;
+}
+main article h3{
+    font-size: 1.5em;
+    font-style: italic;
+    color: #9c2c2c;
+}
+dt{
+    font-size: 1.2em;
+    font-style: bold;
+    color: #8b0000;
+}
+li{
+    list-style-type: none;
+}
+aside a{
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: #F00;
+}
+nav a:link, nav a:visited{
+    color: #00801c;
+}
+nav a:hover{
+    color: #F00;
+}
+aside::before{
+    content: open-quote;
+}
+aside::after{
+    content: close-quote;
+}
+.destaqueHistoria{
+    font-size: 1.05em;
+    color: #F00;
+    text-transform: uppercase;
+}
+#dadosAtendimento{
+    font-size: 1.05em;
+    font-weight: bold;
+    font-style: italic;
+    color: #008000;
+}
