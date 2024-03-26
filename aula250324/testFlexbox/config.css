@@ -1,0 +1,38 @@
+.flexboxContainer{
+    width: 100%;
+    height: 500px;
+    border: 2px solid #F00;
+    background-color: #22e125;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.flexboxContainer div{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin:10px;
+    border: 2px solid #00F;
+    background-color: #FFF;
+}
+.item{
+    order: -1;
+}
+.grow{
+    flex-grow: 4;
+}
+.align{
+    height: 50px !important;
+    align-self: center;
+}
+.srk{
+    flex-shrink: 2;
+}
+.base{
+    flex-basis: 15%;
+}
+.fx{
+    flex: 3 2 20%;
+}

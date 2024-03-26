@@ -1,0 +1,89 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+.pageHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #348e5e;
+}
+.pageHeader img{
+    width: 250px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+nav a{
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 15px;
+}
+nav a:hover{
+    background-color: #348e5e;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.ximiraImage{
+    width: 400px;
+}
+.sidebar{    
+    background-color: #1fe079;
+    padding: 0 5px;
+    flex: 40%;
+}
+.sidebar section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar p{
+    text-align: justify;
+}
+.mainContent{
+    display: flex;
+    background-color: #348e5e;
+    padding: 0 15px;
+}
+.narracaoximira{
+    font-style: italic;
+    font-weight: bolder;
+    display: block;
+    padding-left: 10px;
+}
+.ditadosximira{
+    float: right;
+    margin-left: 15px;
+    padding: 5px;
+    border: 3px dotted #282525;
+    background-color: #ccc;
+}
+.lema{
+    font-style: italic;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.lema::before{
+    content: open-quote;
+}
+.lema::after{
+    content: close-quote;
+}
+footer{
+    display: flex;
+    padding-left: 5px;
+    background-color: #000;
+    color: #fff;
+    flex-direction: column;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
