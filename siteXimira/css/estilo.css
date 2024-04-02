@@ -156,3 +156,7 @@ footer a{
 .fullArticle p{
     text-align: left;
 }
+.imreponsive{
+    width: 80%;
+    height: auto;
+}
