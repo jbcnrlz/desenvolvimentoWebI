@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="estilo.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <form action="#">
+        <label for="v1">Valor 1:</label>
+        <input name="v1" id="v1" type="text">
+        <br>
+        <label for="v2">Valor 2:</label>
+        <input name="v2" id="v2" type="text">
+        <br>
+        <label for="op">Operação:</label><br />        
+        <input name="op" id="soma" type="radio" value="+">+</input>
+        <input name="op" id="subtracao" type="radio" value="-">-</input>
+        <input name="op" id="multiplicacao" type="radio" value="*">*</input>
+        <input name="op" id="divisao" type="radio" value="/">/</input>
+        <br >
+        <input type="button" value="Calcular" id="btnClicar">
+    </form>
+    <div id="resultFinal"></div>
+    <script src='main.js'></script>
+</body>
+</html>
