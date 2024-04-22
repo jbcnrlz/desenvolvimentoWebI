@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #f5f5dc;
+}
+header h1{
+    color: #F00;
+}
+main{
+    display: flex;
+    flex-flow: column wrap;
+}
+main div{
+    margin-left: 10px;
+}
+.postContainer{
+    flex: 2;
+    background-color: #0f2179;
+    color: #FFF;
+    padding: 0 5px;
+}
+.postContainer h2{
+    font-style: italic;
+}
+#sidebar{
+    padding: 0 5px;
+    background-color: #8dbefa;
+}
+#siteHeader{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    align-self: center;
+}
+nav a, nav a:visited{
+    text-decoration: none;
+    color: #000;
+}
+nav a:hover{
+    color: #f00;
+}
+footer{
+    background-color: #e982e9;
+    margin-left: 10px;
+    font-weight: bolder;
+    padding-left: 5px;
+}
