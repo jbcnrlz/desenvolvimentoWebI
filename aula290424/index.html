@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Trovão Tropical</title>
+    <link id="favicon" rel="shortcut icon" type="image/png" href="images/logo.png" >
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilo.css'>    
+</head>
+<body onload="carregarSite();">
+    <header id="siteHeader">
+        <div>
+            <img src="images/logo.png" alt="Um golfinho soltando raios" >
+        </div>
+        <h1>Trovão Tropical</h1>
+    </header>
+    <div id="formAddCity">
+        <form action="javascript:;">
+            <input type="text" value="" name="txtCidade" id="txtCidade">
+            <input type="button" value="Adicionar" id="btnAddCity">
+        </form>
+    </div> 
+    <main>
+        <div class="wheaterCard" id="MaríliaCard">
+            <header class="cardHeader">
+                <h2>
+                    Tempo agora em<br >
+                    <span class="cityName">Marília</span>                    
+                </h2>                                
+            </header>
+            <div class="cityData">
+                <p class="temp">30.6&deg;</p><br >
+                <p class="itemsCD condition"><span>Clima</span><span>Ensolarado</span></p>
+                <p class="itemsCD sensacao"><span>Sensação Térmica</span><span>31.0</span></p>    
+            </div>
+        </div>
+        <div class="wheaterCard" id="BauruCard">
+            <header class="cardHeader">
+                <h2>
+                    Tempo agora em<br >
+                    <span class="cityName">Bauru</span>                    
+                </h2>                                
+            </header> 
+            <div class="cityData">
+                <p class="temp">30.6&deg;</p><br >
+                <p class="itemsCD condition"><span>Clima</span><span>Ensolarado</span></p>
+                <p class="itemsCD sensacao"><span>Sensação Térmica</span><span>31.0</span></p>   
+            </div>
+        </div>
+        <div class="wheaterCard" id="CatanduvaCard">
+            <header class="cardHeader">
+                <h2>
+                    Tempo agora em<br >
+                    <span class="cityName">Catanduva</span>                    
+                </h2>                                
+            </header> 
+            <div class="cityData">
+                <p class="temp">30.6&deg;</p><br >
+                <p class="itemsCD condition"><span>Clima</span><span>Ensolarado</span></p>
+                <p class="itemsCD sensacao"><span>Sensação Térmica</span><span>31.0</span></p>    
+            </div>
+        </div>
+    </main>
+    <script src='js/script.js'></script>
+</body>
+</html>

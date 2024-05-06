@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+        flex-flow: column wrap;
+        background-color: #eee;
+}
+#siteHeader{
+    flex: 1;
+    background-color: #0080cd;
+    color: #eee;
+    text-align: center;
+    padding: 5px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 10px 10px 0 10px;    
+}
+.wheaterCard{
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px #ddd;
+    padding: 2px;
+
+}
+.wheaterCard .cardHeader{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.wheaterCard .cardHeader .cityName{
+    font-style: italic;
+}
+.temp{
+    font-size: 2.5em;
+    text-align: center;
+}
+.itemsCD{
+    display: flex;
+    justify-content: space-between;
+}
+#formAddCity{
+    background-color: #058de1;
+    padding: 5px;
+    text-align: right;
+}
+#siteHeader img{
+    width: 200px;
+}
+h1{
+    font-size: 4em;
+}

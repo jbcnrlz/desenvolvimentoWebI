@@ -160,3 +160,16 @@ footer a{
     width: 80%;
     height: auto;
 }
+.mouseInAulas{
+    background-color: #1fe079;
+}
+.esconderDitados{
+    padding-top: 5px;
+}
+.esconderDitados a:visited, .esconderDitados a{
+    text-decoration: none;
+    color: #000;
+}
+.esconderDitados a:hover{
+    color: #1fe079;
+}
