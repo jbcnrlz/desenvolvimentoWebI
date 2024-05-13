@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    display: flex;
+    flex-flow: row wrap;
+}
+#board div{
+    margin: 5px;
+}
+#board img{
+    width: 250px;
+}
