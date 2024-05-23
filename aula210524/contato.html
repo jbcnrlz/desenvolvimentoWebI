@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <title>Tudo gorduroso!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilo.css'>
+    <link rel="icon" href="imgs/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+<body onload="impededSubmissaoCamposInvalidos();">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/logo.png" alt="Logo gordura" width="30" class="d-inline-block align-text-top">
+                Tudo gorduroso
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="ms-auto">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>                
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="receitas.html">Receitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div aria-label="breadcrumb" class="container-fluid">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contato</li>
+        </ol>
+    </div>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1>Fale com a gente!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <form action="/actionpage.php" method="get" class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="txtNome" class="form-label">Nome</label>
+                        <input type="text" id="txtNome" aria-describedby="nomeHelper" class="form-control" value="" name="txtNome" required>
+                        <div id="nomeHelper" class="form-text">
+                            Digite seu nome completo.
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor digite seu nome!
+                        </div>                      
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="txtEmail" class="form-label">E-mail</label>
+                        <input type="email" id="txtEmail" class="form-control" value="" placeholder="seuemail@email.com.br" name="txtEmail" required>
+                        <div class="invalid-feedback">
+                            Por favor digite um e-mail válido!
+                        </div> 
+                        <div class="valid-feedback">
+                            E-mail válido!
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="txtUF" class="form-label">Estado:</label>
+                        <select name="txtUF" id="txtUF" class="form-select">
+                            <option value="AC">Acre</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>Qual o motivo do seu contato?</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="critica" name="txtMotivo" value="Crítica">
+                            <label class="form-check-label" for="critica">Crítica</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="elogio" name="txtMotivo" value="Elogio">
+                            <label class="form-check-label" for="elogio">Elogio</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="sugestao" name="txtMotivo" value="Sugestão">
+                            <label class="form-check-label" for="sugestao">Sugestão</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Você gostaria de:</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="email" name="receberEmail" value="receberEmail">
+                            <label class="form-check-label" for="email"> Receber e-mail com resposta</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="zap" name="Zap" value="Zap">
+                            <label class="form-check-label" for="zap"> Receber um ZAP com a reposta</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                        <label class="form-label" for="txtMensagem">Sua mensagem:</label><br>
+                        <textarea class="form-control" id="txtMensagem" name="txtMensagem" rows="4" cols="50" required></textarea>
+                        <div class="invalid-feedback">
+                            Digite a mensagem!
+                        </div>
+                    </div>
+                </div>
+                <input class="btn btn-primary" type="submit" name="btnEnviar" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src='js/script.js'></script>
+</body>
+</html>
