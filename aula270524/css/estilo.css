@@ -1,0 +1,22 @@
+.logoHeader{
+    width: 3em;
+}
+.menulink{
+    list-style: none;
+}
+.menulink li{
+    display: block;
+    float: left;
+    margin: 0 0.5em;
+}
+.menulink a, .menulink a:visited{
+    text-decoration: none;
+    color: #DA291C;
+    font-weight: bolder;
+}
+.menulink a:hover{
+    color: #ac352c;
+}
+nav{
+    background-color: #FFC72C;
+}
